@@ -98,8 +98,6 @@ Make sure you use caution when scheduling tasks, especially if they involve crit
 Always test your scripts and commands before adding them to a crontab.
 
 
-
-
 To stop a cron job, you need to remove or comment out the corresponding entry in the crontab file. Follow these steps to stop a cron job:
 
 Open the crontab for editing:
