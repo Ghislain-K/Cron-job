@@ -1,1 +1,42 @@
+EXECUTION STEPS
+
+1.	Create your script file
+  vi [script_file_name].sh
+
+2.	Give an “execution  permission" to the [script_file_name].sh
+  sudo chmod +x [script_file_name].sh
+
+3.	Schedule your cron job
+  crontab -e
+
+4.	To check or list your available/schedule cron job
+  crontab -l
+
+5.	To check or list your available/schedule cron job
+  crontab -l
+
+6.	Remove Crontab:
+To remove all crontab entries for the current user, use the following command:
+  crontab -r
+
+Remember to save your changes after editing the crontab file, and the “cron daemon” will take care of executing the scheduled commands at the specified intervals. 
+
+Make sure you use caution when scheduling tasks, especially if they involve critical operations. 
+
+Always test your scripts and commands before adding them to a crontab.
+
+
+To stop a cron job, you need to remove or comment out the corresponding entry in the crontab file. Follow these steps to stop a cron job:
+
+Open the crontab for editing:
+
+  crontab -e
+
+Locate the line that represents the cron job you want to stop. It will have the same syntax as that you whan to stop:
+
+* * * * * “command_to_be_executed”
+
+To stop the cron job, either:
+  1.	Remove the entire line or 
+  2.	Comment it out by adding a # at the beginning of the line. 
 
